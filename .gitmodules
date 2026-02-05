@@ -1,3 +1,6 @@
 [submodule "src/new_benchmarks_creation/benchmarks"]
 	path = src/new_benchmarks_creation/benchmarks
 	url = git@github.com:mbanon/benchmarks.git
+[submodule "src/evaluation/3rd_party/ConLID"]
+	path = src/evaluation/3rd_party/ConLID
+	url = git@github.com:epfl-nlp/ConLID.git
