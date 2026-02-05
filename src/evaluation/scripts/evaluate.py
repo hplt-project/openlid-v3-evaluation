@@ -2,6 +2,7 @@
 
 import json
 import argparse
+import os
 import sys
 import jsonlines
 from collections import defaultdict, Counter
@@ -26,13 +27,16 @@ def load_data(input_file, model, dataset_type):
     y_true = []
     y_pred = []
 
-    with jsonlines.open(input_file) as reader:
-        for example in reader:
-            true_lang = extract_language(example, dataset_type)
-            pred_lang = example['predictions'][model]
+    with open(input_file.split(os.extsep)[0] + "_wrong.jsonl", 'w') as wrong:
+        with jsonlines.open(input_file) as reader:
+            for example in reader:
+                true_lang = extract_language(example, dataset_type)
+                pred_lang = example['predictions'][model]
+                if true_lang != pred_lang:
+                    wrong.write(json.dumps(example) + '\n')
 
-            y_true.append(true_lang)
-            y_pred.append(pred_lang)
+                y_true.append(true_lang)
+                y_pred.append(pred_lang)
 
     return y_true, y_pred
 

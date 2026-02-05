@@ -42,7 +42,6 @@ cym_Latn
 dan_Latn
 deu_Latn
 dik_Latn
-dyu_Latn
 dzo_Tibt
 ekk_Latn
 ell_Grek

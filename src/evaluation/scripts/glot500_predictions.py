@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
 
-import json
 import argparse
 import sys
-import jsonlines
-import os
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
-from eval_datasets import load_flores_data, load_udhr_data
+from src.evaluation.scripts.eval_datasets import load_flores_data, load_udhr_data
 
 
 def predict_languages(dataset, model_dir, languages_file, split=None):

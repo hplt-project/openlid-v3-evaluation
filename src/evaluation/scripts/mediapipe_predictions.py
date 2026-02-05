@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 
-import json
 import argparse
 import sys
 import jsonlines
 import mediapipe as mp
 from langcodes import Language
-from eval_datasets import load_flores_data, load_udhr_data
+from src.evaluation.scripts.eval_datasets import load_flores_data, load_udhr_data
 
 
 def get_model_info(model_name):

@@ -7,7 +7,7 @@ import sys
 
 import regex
 from huggingface_hub import hf_hub_download
-from eval_datasets import load_flores_data, load_udhr_data, load_hplt_data
+from eval_datasets import load_flores_data, load_udhr_data
 from glotlid_customlid import CustomLID
 
 # Regex patterns for text preprocessing
@@ -16,6 +16,7 @@ NONWORD_REPLACE_STR = r"[^\p{Word}\p{Zs}]|\d"  # either (not a word nor a space)
 NONWORD_REPLACE_PATTERN = regex.compile(NONWORD_REPLACE_STR)
 SPACE_PATTERN = regex.compile(r"\s\s+")  # squeezes sequential whitespace
 
+FASTTEXT_PREFIX = "__label__"
 
 def get_model_info(model_name):
     models = {
@@ -70,19 +71,24 @@ def predict_languages(dataset, model_name, split=None, languages_file=None, pred
     else:
         model = fasttext.load_model(model_path)
 
+    non_flores = {
+        "udhr", "fastspell", "setimes", "parlasent", "he_bcs_ge_full", "ITDI_2022", "hplt", "hrv_Latn-was-wrong",
+        "bos_Latn-was-wrong", "srp_Cyrl-was-wrong", "nob_Latn-was-wrong"
+    }
     if dataset == "flores":
         if split is None:
             raise ValueError("Split must be specified for FLORES+ dataset")
         data = load_flores_data(split)
-    elif dataset == "udhr":
-        data = load_udhr_data()
-    elif dataset == "hplt":
-        data = load_hplt_data()
+    elif dataset in non_flores:
+        data = load_udhr_data(path=dataset)
     else:
-        raise ValueError(f"Unknown dataset: {dataset}. Available datasets: flores, udhr, hplt")
+        raise ValueError(f"Unknown dataset: {dataset}. Available datasets: flores, {non_flores}")
 
     print(f"Processing {len(data)} examples...", file=sys.stderr)
     results = []
+    if args.ensemble_with_glotlid_k:
+        ensemble_model_path = hf_hub_download(repo_id="cis-lmu/glotlid", filename="model.bin")
+        ensemble_model = fasttext.load_model(ensemble_model_path)
 
     for i, example in enumerate(data):
         if i % 10000 == 0:
@@ -90,7 +96,7 @@ def predict_languages(dataset, model_name, split=None, languages_file=None, pred
 
         if dataset == "flores":
             text_content = example["text"]
-        elif dataset in {"udhr", "hplt"}:
+        else:
             text_content = example["sentence"]
 
         if not enable_preprocessing and model_name in ["openlid", "openlid-v2", "retrained"]:
@@ -98,18 +104,24 @@ def predict_languages(dataset, model_name, split=None, languages_file=None, pred
             print("Warning! Disabled preprocessing for openLID model", file=sys.stderr)
             print("!" * 80, file=sys.stderr)
 
+        if args.ensemble_with_glotlid_k:
+            pred = ensemble_model.predict(text_content, k=args.ensemble_with_glotlid_k)[0]
+            glotlid_langs = [pred_lang.removeprefix("__label__") for pred_lang in pred]
+
         if enable_preprocessing:
             text_content = preprocess_text(text_content)
 
         if languages_list is not None:
             pred_labels, pred_probs = model.predict(text_content, k=1)
             pred = pred_labels[0]
-            pred_lang = pred.replace("__label__", "")
+            pred_lang = pred.replace(FASTTEXT_PREFIX, "")
         else:
             pred, pred_probs = model.predict(text_content, k=1)
-            if (pred_probs[0] > 0.5) or (args.model == "glotlid"):
-                pred_lang = pred[0].replace("__label__", "")
+            if (pred_probs[0] > 0.5) or (not args.threshold):
+                pred_lang = pred[0].replace(FASTTEXT_PREFIX, "")
             else:
+                pred_lang = 'zxx_Zxxx'
+            if args.ensemble_with_glotlid_k and (pred_lang not in glotlid_langs):
                 pred_lang = 'zxx_Zxxx'
         result = example.copy()
         if "predictions" not in result:
@@ -124,12 +136,15 @@ def predict_languages(dataset, model_name, split=None, languages_file=None, pred
     if args.out_path:
         with open(args.out_path, 'w') as writer:
             for result in results:
-                writer.write(json.dumps(result)+'\n')
+                writer.write(json.dumps(result, ensure_ascii=False)+'\n')
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run fastText-based language identification predictions")
-    parser.add_argument("--dataset", choices=["flores", "udhr", "hplt"], required=True,
+    parser.add_argument("--dataset", choices=[
+        "flores", "udhr", "fastspell", "setimes", "parlasent", "he_bcs_ge_full", "ITDI_2022", "hplt",
+        "hrv_Latn-was-wrong", "bos_Latn-was-wrong", "srp_Cyrl-was-wrong", "nob_Latn-was-wrong"
+    ], required=True,
                        help="Dataset to process (flores or udhr)")
     parser.add_argument("--model", choices=["glotlid", "openlid", "openlid-v2", "retrained"], required=True,
                        help="Model to use (glotlid, openlid, openlid-v2, or retrained)")
@@ -144,6 +159,8 @@ if __name__ == "__main__":
     parser.add_argument("--model-path", type=str,
                        help="Path to local model file (required for retrained model)")
     parser.add_argument("--out_path", type=str, default="")
+    parser.add_argument("--ensemble_with_glotlid_k", type=int, default=0)
+    parser.add_argument("--threshold", action="store_true")
     args = parser.parse_args()
 
     if args.dataset == "flores" and args.split is None:
