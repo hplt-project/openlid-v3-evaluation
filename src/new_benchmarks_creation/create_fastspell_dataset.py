@@ -43,6 +43,4 @@ with open(os.path.join(out, 'test.jsonl'), 'w') as hplt_f:
                 languages.add(iso_639 + "_" + script)
 languages = list(languages)
 languages.sort()
-with open('../evaluation/language-lists/hplt.txt', 'w') as language_list_out:
-    for lang in languages:
-        language_list_out.write(lang + "\n")
+print(languages)

@@ -4,6 +4,117 @@ This repository contains data and code to reproduce evaluations, described in th
 
 For training the OpenLID-v3 model and running it for inference, refer to [its repository](https://github.com/hplt-project/openlid).
 
+## Evaluate OpenLID-v3
+
+Get the model
+
+```shell
+wget https://zenodo.org/records/17601701/files/openlid-v3.bin
+```
+
+`cd evaluation/`
+
+!beware of hardcoded paths. The scripts are meant to be run from `evaluation/`
+
+### FLORES+ (all languages)
+
+#### Get data
+
+`scripts/download_flores_plus.py`
+
+#### Predict
+
+```shell
+python3 scripts/fasttext_predictions.py \
+    --dataset flores \
+    --split devtest \
+    --model retrained \
+    --model-path <path to the model> \
+    --enable-preprocessing \
+    --out_path <where to save the result>.jsonl
+```
+
+Add `--threshold` to use softmax thresholding at 0.5 and `--ensemble_with_glotlid_k 1` to ensemble with GlotLID
+
+#### Evaluate
+
+```shell
+python3 scripts/evaluate.py \
+  <out_path from the previous step>.jsonl \
+  --model retrained \
+  --languages-file language-lists/openlid-flores-glotlid-udhr.txt \
+  --dataset flores > <path to the result>.json
+```
+
+### UDHR (all languages)
+
+#### Get data
+
+`scripts/download_udhr.py`
+
+#### Predict
+
+```shell
+python3 scripts/fasttext_predictions.py \
+    --dataset udhr \
+    --model retrained \
+    --model-path <path to the model> \
+    --enable-preprocessing \
+    --out_path <where to save the result>.jsonl
+```
+
+#### Evaluate
+
+```shell
+python3 scripts/evaluate.py \
+  <out_path from the previous step>.jsonl \
+  --model retrained \
+  --languages-file language-lists/openlid-flores-glotlid-udhr.txt \
+  --dataset udhr > <path to the result>.json
+```
+
+### FastSpell (many languages, noisy web data)
+
+#### Get data
+
+```shell
+cd ../new_benchmarks_creation/benchmarks/
+git submodule init
+git submodule update
+cd ..
+python3 create_fastspell_dataset.py
+```
+
+#### Predict
+
+```shell
+python3 scripts/fasttext_predictions.py \
+    --dataset udhr \
+    --model retrained \
+    --model-path <path to the model> \
+    --enable-preprocessing \
+    --out_path <where to save the result>.jsonl
+```
+
+#### Evaluate
+
+For FastSpell and the rest of benchmarks, it is the same, as for UDHR (use `--dataset udhr` to define the format, a corresponding `--languages-file` and pass the correct path to predictions)
+
+### HPLT 3.0 (many languages, noisy web data)
+
+#### Get data
+
+### SETimes (BCS)
+
+### Twitter (BCS)
+
+### ParlaSent (BCS)
+
+### ITDI (languages of Italy)
+
+### SLIDE, NordicDSL (Scandinavian)
+
+see [the SLIDE repository](https://github.com/ltgoslo/slide)
 
 ---------------------------------------------------------------------------------------------
 
