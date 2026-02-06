@@ -6,7 +6,7 @@ out = '../../data/ITDI_2022'
 os.makedirs(out, exist_ok=True)
 
 with open(os.path.join(out, 'test.jsonl'), 'w') as out:
-    with open(os.path.expanduser("~/Downloads/test_gold_standard.txt"), "r") as f:
+    with open(os.path.expanduser("ITDI_2022/task/test_gold_standard.txt"), "r") as f:
         for line in f:
             script = "Latn"
             lang = line[:3].lower()

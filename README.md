@@ -166,6 +166,28 @@ python3 scripts/fasttext_predictions.py \
 
 ### ITDI (languages of Italy)
 
+#### Get data
+
+```shell
+cd ../new_benchmarks_creation/ITDI_2022/
+git submodule init
+git submodule update
+cd ..
+python3 create_ligurian_dataset.py
+```
+
+#### Predict
+
+```shell
+cd ../evaluation
+python3 scripts/fasttext_predictions.py \
+    --dataset ITDI_2022 \
+    --model retrained \
+    --model-path <path to the model> \
+    --enable-preprocessing \
+    --out_path <where to save the result>.jsonl
+```
+
 ### SLIDE, NordicDSL (Scandinavian)
 
 see [the SLIDE repository](https://github.com/ltgoslo/slide)
