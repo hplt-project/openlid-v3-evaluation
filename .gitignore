@@ -11,6 +11,13 @@ src/evaluation/data/twi_hbs
 src/results/specific*
 src/results/conlid*
 src/results/maria/
+src/results/*flores_plus_dev.*
+src/results/*cascade*
+src/results/*eval-ara*
+src/results/*eval-fas*
+src/results/*eval-hsb*
+src/results/*eval-sca*
+src/results/*eval-spec*
 src/logs/
 src/models/
 src/predictions/
