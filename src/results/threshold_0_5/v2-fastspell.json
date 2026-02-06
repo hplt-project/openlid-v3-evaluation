@@ -1,0 +1,319 @@
+{
+  "macro_averages": {
+    "f1": 0.900410993835246,
+    "fpr": 0.003915942037862029,
+    "precision": 0.9455289829320357,
+    "recall": 0.8906904402261352,
+    "num_examples": 6809
+  },
+  "per_language": {
+    "slk_Latn": {
+      "f1": 0.9598393574297189,
+      "tp": 239,
+      "fn": 4,
+      "fp": 16,
+      "fpr": 0.0024367956137678953,
+      "precision": 0.9372549019607843,
+      "recall": 0.9835390946502057
+    },
+    "spa_Latn": {
+      "f1": 0.8974197608558843,
+      "tp": 713,
+      "fn": 159,
+      "fp": 4,
+      "fpr": 0.00067374094660603,
+      "precision": 0.9944211994421199,
+      "recall": 0.8176605504587156
+    },
+    "slv_Latn": {
+      "f1": 0.9657657657657657,
+      "tp": 268,
+      "fn": 8,
+      "fp": 11,
+      "fpr": 0.0016837593754783406,
+      "precision": 0.9605734767025089,
+      "recall": 0.9710144927536232
+    },
+    "srp_Cyrl": {
+      "f1": 0.41269841269841273,
+      "tp": 104,
+      "fn": 296,
+      "fp": 0,
+      "fpr": 0.0,
+      "precision": 1.0,
+      "recall": 0.26
+    },
+    "ell_Grek": {
+      "f1": 1.0,
+      "tp": 213,
+      "fn": 0,
+      "fp": 0,
+      "fpr": 0.0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "hrv_Latn": {
+      "f1": 0.8255528255528256,
+      "tp": 336,
+      "fn": 83,
+      "fp": 59,
+      "fpr": 0.009233176838810642,
+      "precision": 0.850632911392405,
+      "recall": 0.801909307875895
+    },
+    "mlt_Latn": {
+      "f1": 0.997179125528914,
+      "tp": 707,
+      "fn": 4,
+      "fp": 0,
+      "fpr": 0.0,
+      "precision": 1.0,
+      "recall": 0.9943741209563994
+    },
+    "ron_Latn": {
+      "f1": 0.9843749999999999,
+      "tp": 378,
+      "fn": 11,
+      "fp": 1,
+      "fpr": 0.00015576323987538941,
+      "precision": 0.9973614775725593,
+      "recall": 0.9717223650385605
+    },
+    "dan_Latn": {
+      "f1": 0.9395973154362416,
+      "tp": 350,
+      "fn": 24,
+      "fp": 21,
+      "fpr": 0.0032634032634032634,
+      "precision": 0.9433962264150944,
+      "recall": 0.9358288770053476
+    },
+    "tur_Latn": {
+      "f1": 0.9966555183946488,
+      "tp": 298,
+      "fn": 2,
+      "fp": 0,
+      "fpr": 0.0,
+      "precision": 1.0,
+      "recall": 0.9933333333333333
+    },
+    "ces_Latn": {
+      "f1": 0.9376257545271629,
+      "tp": 233,
+      "fn": 29,
+      "fp": 2,
+      "fpr": 0.0003054834275240568,
+      "precision": 0.9914893617021276,
+      "recall": 0.8893129770992366
+    },
+    "mkd_Cyrl": {
+      "f1": 0.9983361064891847,
+      "tp": 300,
+      "fn": 0,
+      "fp": 1,
+      "fpr": 0.00015363343063450608,
+      "precision": 0.9966777408637874,
+      "recall": 1.0
+    },
+    "bul_Cyrl": {
+      "f1": 0.9859649122807017,
+      "tp": 281,
+      "fn": 8,
+      "fp": 0,
+      "fpr": 0.0,
+      "precision": 1.0,
+      "recall": 0.972318339100346
+    },
+    "bos_Latn": {
+      "f1": 0.6272727272727273,
+      "tp": 276,
+      "fn": 24,
+      "fp": 304,
+      "fpr": 0.046704562912889845,
+      "precision": 0.47586206896551725,
+      "recall": 0.92
+    },
+    "cat_Latn": {
+      "f1": 0.9295199182839632,
+      "tp": 455,
+      "fn": 66,
+      "fp": 3,
+      "fpr": 0.00047709923664122136,
+      "precision": 0.9934497816593887,
+      "recall": 0.8733205374280231
+    },
+    "glg_Latn": {
+      "f1": 0.9264069264069265,
+      "tp": 321,
+      "fn": 30,
+      "fp": 21,
+      "fpr": 0.0032517807370703003,
+      "precision": 0.9385964912280702,
+      "recall": 0.9145299145299145
+    },
+    "nob_Latn": {
+      "f1": 0.8265107212475634,
+      "tp": 212,
+      "fn": 77,
+      "fp": 12,
+      "fpr": 0.0018404907975460123,
+      "precision": 0.9464285714285714,
+      "recall": 0.7335640138408305
+    },
+    "als_Latn": {
+      "f1": 0.9966777408637874,
+      "tp": 300,
+      "fn": 0,
+      "fp": 2,
+      "fpr": 0.00030726686126901216,
+      "precision": 0.9933774834437086,
+      "recall": 1.0
+    }
+  },
+  "confusion_matrix": {
+    "slk_Latn": {
+      "slk_Latn": 239,
+      "zxx_Zxxx": 1,
+      "ces_Latn": 2,
+      "vec_Latn": 1
+    },
+    "spa_Latn": {
+      "spa_Latn": 713,
+      "ast_Latn": 33,
+      "zxx_Zxxx": 70,
+      "oci_Latn": 1,
+      "por_Latn": 4,
+      "lmo_Latn": 1,
+      "glg_Latn": 20,
+      "tum_Latn": 1,
+      "ayr_Latn": 4,
+      "pap_Latn": 2,
+      "epo_Latn": 2,
+      "gug_Latn": 10,
+      "vec_Latn": 2,
+      "cat_Latn": 2,
+      "srd_Latn": 2,
+      "fur_Latn": 1,
+      "eus_Latn": 2,
+      "quy_Latn": 1,
+      "pag_Latn": 1
+    },
+    "slv_Latn": {
+      "slv_Latn": 268,
+      "hrv_Latn": 1,
+      "ekk_Latn": 1,
+      "zxx_Zxxx": 5,
+      "bos_Latn": 1
+    },
+    "srp_Cyrl": {
+      "bos_Latn": 256,
+      "zxx_Zxxx": 5,
+      "hrv_Latn": 33,
+      "srp_Cyrl": 104,
+      "slv_Latn": 1,
+      "als_Latn": 1
+    },
+    "ell_Grek": {
+      "ell_Grek": 213
+    },
+    "hrv_Latn": {
+      "hrv_Latn": 336,
+      "slv_Latn": 10,
+      "zxx_Zxxx": 23,
+      "bos_Latn": 47,
+      "fur_Latn": 1,
+      "slk_Latn": 1,
+      "lit_Latn": 1
+    },
+    "mlt_Latn": {
+      "mlt_Latn": 707,
+      "zxx_Zxxx": 4
+    },
+    "ron_Latn": {
+      "ron_Latn": 378,
+      "zxx_Zxxx": 6,
+      "por_Latn": 2,
+      "ast_Latn": 1,
+      "srd_Latn": 1,
+      "nld_Latn": 1
+    },
+    "dan_Latn": {
+      "dan_Latn": 350,
+      "zxx_Zxxx": 11,
+      "nob_Latn": 12,
+      "sun_Latn": 1
+    },
+    "tur_Latn": {
+      "tur_Latn": 298,
+      "zxx_Zxxx": 1,
+      "als_Latn": 1
+    },
+    "ces_Latn": {
+      "ces_Latn": 233,
+      "zxx_Zxxx": 10,
+      "slk_Latn": 15,
+      "hun_Latn": 1,
+      "hrv_Latn": 1,
+      "eng_Latn": 2
+    },
+    "mkd_Cyrl": {
+      "mkd_Cyrl": 300
+    },
+    "bul_Cyrl": {
+      "bul_Cyrl": 281,
+      "zxx_Zxxx": 5,
+      "mkd_Cyrl": 1,
+      "rus_Cyrl": 2
+    },
+    "bos_Latn": {
+      "bos_Latn": 276,
+      "hrv_Latn": 24
+    },
+    "cat_Latn": {
+      "cat_Latn": 455,
+      "zxx_Zxxx": 36,
+      "oci_Latn": 7,
+      "lmo_Latn": 2,
+      "ast_Latn": 6,
+      "lim_Latn": 1,
+      "pol_Latn": 1,
+      "hat_Latn": 1,
+      "srd_Latn": 5,
+      "vec_Latn": 3,
+      "ita_Latn": 1,
+      "glg_Latn": 1,
+      "por_Latn": 1,
+      "fur_Latn": 1
+    },
+    "glg_Latn": {
+      "glg_Latn": 321,
+      "hau_Latn": 1,
+      "por_Latn": 11,
+      "zxx_Zxxx": 7,
+      "ast_Latn": 5,
+      "spa_Latn": 4,
+      "ron_Latn": 1,
+      "hat_Latn": 1
+    },
+    "nob_Latn": {
+      "nob_Latn": 212,
+      "dan_Latn": 21,
+      "nno_Latn": 21,
+      "zxx_Zxxx": 31,
+      "swe_Latn": 3,
+      "cat_Latn": 1
+    },
+    "als_Latn": {
+      "als_Latn": 300
+    },
+    "nno_Latn": {
+      "nob_Latn": 75,
+      "zxx_Zxxx": 23,
+      "nno_Latn": 311,
+      "swe_Latn": 8,
+      "dan_Latn": 4,
+      "som_Latn": 1,
+      "nld_Latn": 1
+    }
+  }
+}
