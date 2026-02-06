@@ -1,0 +1,156 @@
+{
+  "macro_averages": {
+    "f1": 0.766771115167395,
+    "fpr": 0.004204268233498548,
+    "precision": 0.9846922754309997,
+    "recall": 0.6895470461853886,
+    "num_examples": 4744
+  },
+  "per_language": {
+    "vec_Latn": {
+      "f1": 0.4160331720801659,
+      "tp": 301,
+      "fn": 838,
+      "fp": 7,
+      "fpr": 0.001941747572815534,
+      "precision": 0.9772727272727273,
+      "recall": 0.2642669007901668
+    },
+    "fur_Latn": {
+      "f1": 0.9705769965609478,
+      "tp": 1270,
+      "fn": 53,
+      "fp": 24,
+      "fpr": 0.0070154925460391695,
+      "precision": 0.98145285935085,
+      "recall": 0.9599395313681028
+    },
+    "lij_Latn": {
+      "f1": 0.9137031768610716,
+      "tp": 1927,
+      "fn": 355,
+      "fp": 9,
+      "fpr": 0.0036555645816409425,
+      "precision": 0.9953512396694215,
+      "recall": 0.8444347063978965
+    }
+  },
+  "confusion_matrix": {
+    "vec_Latn": {
+      "zxx_Zxxx": 515,
+      "ita_Latn": 263,
+      "vec_Latn": 301,
+      "lmo_Latn": 22,
+      "fur_Latn": 20,
+      "srd_Latn": 8,
+      "cat_Latn": 1,
+      "lij_Latn": 9
+    },
+    "lld_Latn": {
+      "ita_Latn": 38,
+      "zxx_Zxxx": 1276,
+      "vec_Latn": 531,
+      "pap_Latn": 4,
+      "lij_Latn": 107,
+      "spa_Latn": 11,
+      "vie_Latn": 3,
+      "lmo_Latn": 126,
+      "por_Latn": 32,
+      "cat_Latn": 7,
+      "fur_Latn": 38,
+      "tsn_Latn": 1,
+      "srd_Latn": 7,
+      "ast_Latn": 1,
+      "hrv_Latn": 1,
+      "glg_Latn": 4,
+      "slk_Latn": 1,
+      "hat_Latn": 1,
+      "hun_Latn": 1,
+      "lvs_Latn": 2,
+      "xho_Latn": 1,
+      "pol_Latn": 2,
+      "kin_Latn": 2,
+      "epo_Latn": 1,
+      "ron_Latn": 1,
+      "gle_Latn": 1
+    },
+    "fur_Latn": {
+      "fur_Latn": 1270,
+      "zxx_Zxxx": 32,
+      "cat_Latn": 14,
+      "vec_Latn": 2,
+      "ita_Latn": 4,
+      "slv_Latn": 1
+    },
+    "nap_Latn": {
+      "zxx_Zxxx": 1566,
+      "ita_Latn": 308,
+      "scn_Latn": 124,
+      "cat_Latn": 4,
+      "lij_Latn": 7,
+      "vec_Latn": 2,
+      "srd_Latn": 7,
+      "ilo_Latn": 1,
+      "lim_Latn": 1,
+      "tur_Latn": 1,
+      "lmo_Latn": 1,
+      "por_Latn": 1,
+      "mlt_Latn": 1,
+      "fur_Latn": 1,
+      "hun_Latn": 1
+    },
+    "lij_Latn": {
+      "lij_Latn": 1927,
+      "zxx_Zxxx": 282,
+      "fur_Latn": 4,
+      "scn_Latn": 38,
+      "hrv_Latn": 1,
+      "lmo_Latn": 5,
+      "mlt_Latn": 6,
+      "ita_Latn": 4,
+      "srd_Latn": 3,
+      "vec_Latn": 5,
+      "ast_Latn": 1,
+      "ron_Latn": 1,
+      "oci_Latn": 2,
+      "hat_Latn": 1,
+      "vie_Latn": 1,
+      "por_Latn": 1
+    },
+    "lmo_Latn": {
+      "lmo_Latn": 637,
+      "zxx_Zxxx": 38,
+      "ita_Latn": 6,
+      "fur_Latn": 1,
+      "hat_Latn": 1,
+      "vec_Latn": 3,
+      "lat_Latn": 2,
+      "cat_Latn": 1
+    },
+    "eml_Latn": {
+      "zxx_Zxxx": 726,
+      "lmo_Latn": 46,
+      "ita_Latn": 21,
+      "fur_Latn": 8,
+      "hat_Latn": 1,
+      "lij_Latn": 12,
+      "swe_Latn": 1,
+      "vec_Latn": 4,
+      "glg_Latn": 2,
+      "vie_Latn": 2,
+      "scn_Latn": 1,
+      "fra_Latn": 1
+    },
+    "roa_Latn": {
+      "zxx_Zxxx": 319,
+      "ita_Latn": 63,
+      "scn_Latn": 174,
+      "lmo_Latn": 14,
+      "fur_Latn": 5,
+      "lij_Latn": 25,
+      "hat_Latn": 1,
+      "oci_Latn": 1,
+      "vie_Latn": 1
+    }
+  }
+}
