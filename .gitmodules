@@ -7,3 +7,6 @@
 [submodule "src/new_benchmarks_creation/release3_inspection"]
 	path = src/new_benchmarks_creation/release3_inspection
 	url = git@github.com:hplt-project/release3_inspection.git
+[submodule "src/new_benchmarks_creation/benchich"]
+	path = src/new_benchmarks_creation/benchich
+	url = git@github.com:clarinsi/benchich.git
