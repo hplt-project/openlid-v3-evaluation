@@ -1,3 +1,4 @@
+import argparse
 import json
 import os
 import re
@@ -10,13 +11,17 @@ from datasets import load_dataset
 
 ad = AlphabetDetector()
 
+parser = argparse.ArgumentParser()
+parser.add_argument('--dataset', default="twi")
+args = parser.parse_args()
+
 
 def make_twi():
-    out = '../../data/twi_hbs'
+    out = '../evaluation/data/twi_hbs'
     os.makedirs(out, exist_ok=True)
 
     with open(os.path.join(out, 'test.jsonl'), 'w') as twi_hbs:
-        with open(os.path.expanduser("~/Downloads/Twitter-HBS/Twitter-HBS.json"), 'r') as twi_f:
+        with open("benchich/lang/data/Twitter-HBS.json", 'r') as twi_f:
             twi = json.load(twi_f)
             for line in twi:
                 if line["language"] != "me":
@@ -28,7 +33,7 @@ def make_twi():
                         if line["language"] == "sr":
                             scripts = ad.detect_alphabet(tweet)
                             if 'CYRILLIC' in scripts:
-                                script = "Cyrl"
+                                script = "Cyrl"  # this is not reliable, they mix characters from both
                         twi_hbs.write(
                             json.dumps(
                                 {
@@ -43,7 +48,7 @@ def make_twi():
 
 
 def make_setimes():
-    out = '../../data/setimes'
+    out = '../evaluation/data/setimes'
     os.makedirs(out, exist_ok=True)
     srp = {text.strip().lower() for text in pd.read_parquet(os.path.expanduser(f"/data/srp_Latn.parquet"))['text'].unique()}
     hrv = {text.strip().lower() for text in pd.read_parquet(os.path.expanduser(f"/data/hrv_Latn.parquet"))['text'].unique()}
@@ -115,7 +120,7 @@ def make_setimes():
 
 def make_parlasent():
     data = load_dataset("classla/ParlaSent", "BCS", split='train')
-    out = '../../data/parlasent'
+    out = '../evaluation/data/parlasent'
     os.makedirs(out, exist_ok=True)
     mapping = {"HR": "hrv", "SRB": "srp", "BiH": "bos"}
     with open(os.path.join(out, 'test.jsonl'), 'w') as hbs_out:
@@ -136,7 +141,7 @@ def make_parlasent():
 
 
 def make_copa():
-    out = '../../data/hs_copa'
+    out = '../evaluation/data/hs_copa'
     os.makedirs(out, exist_ok=True)
     with open(os.path.join(out, 'test.jsonl'), 'w') as hbs_out:
         for file in glob(os.path.expanduser("~/Downloads/Choice of plausible alternatives dataset in */*.jsonl")):
@@ -175,7 +180,7 @@ def make_copa():
 def heritage():
     pat = re.compile(r"\d+ \w: ")
     pat2 = re.compile(r"\d+")
-    out = '../../data/he_bcs_ge_full'
+    out = '../evaluation/data/he_bcs_ge_full'
     os.makedirs(out, exist_ok=True)
     with open(os.path.join(out, 'test.jsonl'), 'w') as hbs_out:
         for file in glob(os.path.expanduser("~/Downloads/He-BCS-Ge/T*.txt")):
@@ -218,4 +223,8 @@ def heritage():
                 ) + '\n',
             )
 
-make_setimes()
+
+if args.dataset == "twi":
+    make_twi()
+elif args.dataset == "parlasent":
+    make_parlasent()

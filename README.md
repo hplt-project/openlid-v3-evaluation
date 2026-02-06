@@ -34,7 +34,7 @@ python3 scripts/fasttext_predictions.py \
     --out_path <where to save the result>.jsonl
 ```
 
-Add `--threshold` to use softmax thresholding at 0.5 and `--ensemble_with_glotlid_k 1` to ensemble with GlotLID
+For this and other benchmarks, add `--threshold` to use softmax thresholding at 0.5 and `--ensemble_with_glotlid_k 1` to ensemble with GlotLID
 
 #### Evaluate
 
@@ -89,7 +89,7 @@ python3 create_fastspell_dataset.py
 
 ```shell
 python3 scripts/fasttext_predictions.py \
-    --dataset udhr \
+    --dataset fastspell \
     --model retrained \
     --model-path <path to the model> \
     --enable-preprocessing \
@@ -104,11 +104,65 @@ For FastSpell and the rest of benchmarks, it is the same, as for UDHR (use `--da
 
 #### Get data
 
-### SETimes (BCS)
+```shell
+cd ../new_benchmarks_creation/release3_inspection/
+git submodule init
+git submodule update
+cd ..
+python3 create_hplt_dataset.py
+```
 
-### Twitter (BCS)
+#### Predict
+
+```shell
+cd ../../evaluation
+python3 scripts/fasttext_predictions.py \
+    --dataset hplt \
+    --model retrained \
+    --model-path <path to the model> \
+    --enable-preprocessing \
+    --out_path <where to save the result>.jsonl
+```
+
+### [SETimes (BCS)](https://github.com/clarinsi/benchich/tree/main/lang/data)
+
+We suggest to skip it for now, as we noticed that our code ignored existing train-test split in those data.
+Taking it into account might probably solve the problem of contamination.
+
+### [Twitter (BCS)](https://github.com/clarinsi/benchich/tree/main/lang/data)
+
+```shell
+cd ../new_benchmarks_creation/benchich/
+git submodule init
+git submodule update
+cd ..
+python3 create_hbs_dataset.py
+```
+
+#### Predict
+
+It's multilabel, so see [the SLIDE repository](https://github.com/ltgoslo/slide) 
 
 ### ParlaSent (BCS)
+
+#### Get data
+
+```shell
+cd ../
+python3 create_hbs_datasets.py --dataset parlasent
+```
+
+#### Predict
+
+```shell
+cd ../evaluation
+python3 scripts/fasttext_predictions.py \
+    --dataset parlasent \
+    --model retrained \
+    --model-path <path to the model> \
+    --enable-preprocessing \
+    --out_path <where to save the result>.jsonl
+```
 
 ### ITDI (languages of Italy)
 
