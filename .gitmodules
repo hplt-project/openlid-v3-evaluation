@@ -4,3 +4,6 @@
 [submodule "src/evaluation/3rd_party/ConLID"]
 	path = src/evaluation/3rd_party/ConLID
 	url = git@github.com:epfl-nlp/ConLID.git
+[submodule "src/new_benchmarks_creation/release3_inspection"]
+	path = src/new_benchmarks_creation/release3_inspection
+	url = git@github.com:hplt-project/release3_inspection.git
