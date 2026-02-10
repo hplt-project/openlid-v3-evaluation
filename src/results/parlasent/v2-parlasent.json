@@ -1,0 +1,55 @@
+{
+  "macro_averages": {
+    "f1": 0.30869620682940924,
+    "fpr": 0.23108824361430727,
+    "precision": 0.28560918181202605,
+    "recall": 0.4592049108355991,
+    "num_examples": 2600
+  },
+  "per_language": {
+    "hrv_Latn": {
+      "f1": 0.7913259864912905,
+      "tp": 1113,
+      "fn": 274,
+      "fp": 313,
+      "fpr": 0.258037922506183,
+      "precision": 0.7805049088359046,
+      "recall": 0.802451333813987
+    },
+    "srp_Latn": {
+      "f1": 0,
+      "tp": 0,
+      "fn": 1060,
+      "fp": 0,
+      "fpr": 0.0,
+      "precision": 0,
+      "recall": 0.0
+    },
+    "bos_Latn": {
+      "f1": 0.13476263399693722,
+      "tp": 88,
+      "fn": 65,
+      "fp": 1065,
+      "fpr": 0.4352268083367389,
+      "precision": 0.07632263660017347,
+      "recall": 0.5751633986928104
+    }
+  },
+  "confusion_matrix": {
+    "hrv_Latn": {
+      "bos_Latn": 272,
+      "hrv_Latn": 1113,
+      "zxx_Zxxx": 2
+    },
+    "srp_Latn": {
+      "bos_Latn": 793,
+      "zxx_Zxxx": 15,
+      "hrv_Latn": 248,
+      "srp_Cyrl": 4
+    },
+    "bos_Latn": {
+      "hrv_Latn": 65,
+      "bos_Latn": 88
+    }
+  }
+}
