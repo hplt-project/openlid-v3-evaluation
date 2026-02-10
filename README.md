@@ -124,22 +124,7 @@ python3 scripts/fasttext_predictions.py \
     --out_path <where to save the result>.jsonl
 ```
 
-### [SETimes (BCS)](https://github.com/clarinsi/benchich/tree/main/lang/data)
-
-We suggest to skip it for now, as we noticed that our code ignored existing train-test split in those data.
-Taking it into account might probably solve the problem of contamination.
-
-### [Twitter (BCS)](https://github.com/clarinsi/benchich/tree/main/lang/data)
-
-```shell
-cd ../new_benchmarks_creation/benchich/
-git submodule init
-git submodule update
-cd ..
-python3 create_hbs_dataset.py
-```
-
-#### Predict
+### Twitter (BCS)
 
 It's multilabel, so see [the SLIDE repository](https://github.com/ltgoslo/slide) 
 
