@@ -1,6 +1,8 @@
-# OpenLID-v3: Precision-Driven Language Identification Tool
+# OpenLID-v3: Improving the Precision of Closely Related Language Identification -- An Experience Report
 
-This repository contains data and code to reproduce evaluations, described in the paper "OpenLID-v3: Precision-Driven Language Identification Tool", accepted to [VarDial 2026](https://sites.google.com/view/vardial-2026/) workshop, collocated with [EACL 2026](https://2026.eacl.org/).
+This repository contains data and code to reproduce evaluations, described in the paper ["OpenLID-v3: Improving the Precision of Closely Related Language Identification -- An Experience Report"](https://arxiv.org/abs/2602.13139), accepted to [VarDial 2026](https://sites.google.com/view/vardial-2026/) workshop, collocated with [EACL 2026](https://2026.eacl.org/).
+
+[OpenLID-v3 on HuggingFace](https://huggingface.co/HPLT/OpenLID-v3)
 
 For training the OpenLID-v3 model and running it for inference, refer to [its repository](https://github.com/hplt-project/openlid).
 
@@ -177,6 +179,19 @@ python3 scripts/fasttext_predictions.py \
 
 see [the SLIDE repository](https://github.com/ltgoslo/slide)
 
+# Cite
+
+```bibtex
+@misc{fedorova2026openlidv3improvingprecisionclosely,
+      title={OpenLID-v3: Improving the Precision of Closely Related Language Identification -- An Experience Report}, 
+      author={Mariia Fedorova and Nikolay Arefyev and Maja Buljan and Jindřich Helcl and Stephan Oepen and Egil Rønningstad and Yves Scherrer},
+      year={2026},
+      eprint={2602.13139},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2602.13139}, 
+}
+```
 ---------------------------------------------------------------------------------------------
 
 <sub><sup>This project has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement No 101070350 and from UK Research and Innovation (UKRI) under the UK government’s Horizon Europe funding guarantee [grant number 10052546].
