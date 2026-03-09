@@ -18,6 +18,7 @@ src/results/*eval-fas*
 src/results/*eval-hsb*
 src/results/*eval-sca*
 src/results/*eval-spec*
+src/results/*.jsonl
 src/logs/
 src/models/
 src/predictions/
