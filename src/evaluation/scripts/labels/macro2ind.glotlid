@@ -1,0 +1,338 @@
+ara, Arabic
+OpenLID uses ara for ['acm_Arab', 'aeb_Arab', 'ajp_Arab', 'apc_Arab', 'arb_Arab', 'arb_Latn', 'arq_Arab', 'ars_Arab', 'ary_Arab', 'arz_Arab', 'ayp_Arab', 'shu_Arab'] (['Mesopotamian Arabic', 'Tunisian Arabic', 'South Levantine Arabic', 'Levantine Arabic', 'Standard Arabic', 'Standard Arabic', 'Algerian Arabic', 'Najdi Arabic', 'Moroccan Arabic', 'Egyptian Arabic', 'North Mesopotamian Arabic', 'Chadian Arabic'])
+OpenLID has no acm_Arab (Mesopotamian Arabic)
+OpenLID has no aeb_Arab (Tunisian Arabic)
+OpenLID has no ajp_Arab (South Levantine Arabic)
+OpenLID has no apc_Arab (Levantine Arabic)
+OpenLID has no arb_Arab (Standard Arabic)
+OpenLID has no arb_Latn (Standard Arabic)
+OpenLID has no arq_Arab (Algerian Arabic)
+OpenLID has no ars_Arab (Najdi Arabic)
+OpenLID has no ary_Arab (Moroccan Arabic)
+OpenLID has no arz_Arab (Egyptian Arabic)
+OpenLID has no ayp_Arab (North Mesopotamian Arabic)
+OpenLID has no shu_Arab (Chadian Arabic)
+---------------------------------
+syr, Syriac
+OpenLID has no aii_Syrc (Assyrian Neo-Aramaic)
+---------------------------------
+sqi, Albanian
+OpenLID has no aln_Latn (Gheg Albanian)
+OpenLID uses als_Latn (Tosk Albanian)
+---------------------------------
+aym, Aymara
+OpenLID uses ayr_Latn (Central Aymara)
+---------------------------------
+aze, Azerbaijani
+OpenLID uses azb_Arab (South Azerbaijani)
+OpenLID has no azj_Cyrl (North Azerbaijani)
+OpenLID uses azj_Latn (North Azerbaijani)
+---------------------------------
+bal, Baluchi
+OpenLID has no bcc_Arab (Southern Balochi)
+---------------------------------
+bik, Bikol
+OpenLID has no bcl_Latn (Central Bikol)
+---------------------------------
+msa, Malay (macrolanguage)
+OpenLID uses bjn_Arab (Banjar)
+OpenLID uses bjn_Latn (Banjar)
+OpenLID uses ind_Latn (Indonesian)
+OpenLID has no max_Latn (North Moluccan Malay)
+OpenLID has no min_Arab (Minangkabau)
+OpenLID uses min_Latn (Minangkabau)
+OpenLID has no mui_Latn (Musi)
+OpenLID has no pse_Latn (Central Malay)
+OpenLID has no urk_Thai (Urak Lawoi')
+OpenLID has no xmm_Latn (Manado Malay)
+OpenLID has no zsm_Arab (Standard Malay)
+OpenLID uses zsm_Latn (Standard Malay)
+---------------------------------
+hbs, Serbo-Croatian
+OpenLID uses bos_Latn (Bosnian)
+OpenLID has no cnr_Latn (Montenegrin)
+OpenLID uses hrv_Latn (Croatian)
+OpenLID uses srp_Cyrl (Serbian)
+OpenLID uses srp_Latn (Serbian)
+---------------------------------
+bua, Buriat
+OpenLID has no bxr_Cyrl (Russia Buriat)
+---------------------------------
+kur, Kurdish
+OpenLID uses ckb_Arab (Central Kurdish)
+OpenLID has no kmr_Cyrl (Northern Kurdish)
+OpenLID uses kmr_Latn (Northern Kurdish)
+OpenLID has no sdh_Arab (Southern Kurdish)
+---------------------------------
+zho, Chinese
+OpenLID has no cmn_Hani (Mandarin Chinese)
+OpenLID has no hak_Hani (Hakka Chinese)
+OpenLID has no hak_Latn (Hakka Chinese)
+OpenLID has no lzh_Hani (Literary Chinese)
+OpenLID has no nan_Hani (Min Nan Chinese)
+OpenLID has no nan_Latn (Min Nan Chinese)
+OpenLID has no wuu_Hani (Wu Chinese)
+OpenLID has no yue_Hani (Yue Chinese)
+---------------------------------
+cre, Cree
+OpenLID has no crj_Cans (Southern East Cree)
+OpenLID has no crk_Cans (Plains Cree)
+OpenLID has no crk_Latn (Plains Cree)
+OpenLID has no crl_Cans (Northern East Cree)
+OpenLID has no crm_Cans (Moose Cree)
+OpenLID has no csw_Cans (Swampy Cree)
+OpenLID has no csw_Latn (Swampy Cree)
+OpenLID has no cwd_Cans (Woods Cree)
+---------------------------------
+din, Dinka
+OpenLID uses dik_Latn (Southwestern Dinka)
+OpenLID has no dip_Latn (Northeastern Dinka)
+OpenLID has no dks_Latn (Southeastern Dinka)
+---------------------------------
+zza, Zaza
+OpenLID has no diq_Latn (Dimli (individual language))
+OpenLID has no kiu_Latn (Kirmanjki (individual language))
+---------------------------------
+doi, Dogri (macrolanguage)
+Only glotlid has this macrolanguage (as macrolanguage)
+---------------------------------
+nep, Nepali (macrolanguage)
+OpenLID has no dty_Deva (Dotyali)
+OpenLID uses npi_Deva (Nepali (individual language))
+OpenLID has no npi_Latn (Nepali (individual language))
+---------------------------------
+bnc, Bontok
+OpenLID has no ebk_Latn (Eastern Bontok)
+OpenLID has no lbk_Latn (Central Bontok)
+---------------------------------
+est, Estonian
+OpenLID uses ekk_Latn (Standard Estonian)
+OpenLID has no vro_Latn (Võro)
+---------------------------------
+kln, Kalenjin
+OpenLID has no enb_Latn (Markweeta)
+OpenLID has no niq_Latn (Nandi)
+OpenLID has no sgc_Latn (Kipsigis)
+OpenLID has no spy_Latn (Sabaot)
+---------------------------------
+ipk, Inupiaq
+OpenLID has no esi_Latn (North Alaskan Inupiatun)
+OpenLID has no esk_Latn (Northwest Alaska Inupiatun)
+---------------------------------
+fas, Persian
+OpenLID uses fas for ['__label__fas_Arab'] (['Persian'])
+glotlid also uses macrolanguage here!
+---------------------------------
+aka, Akan
+OpenLID has no fat_Latn (Fanti)
+OpenLID uses twi_Latn (Twi)
+---------------------------------
+ful, Fulah
+OpenLID has no ffm_Latn (Maasina Fulfulde)
+OpenLID has no fub_Latn (Adamawa Fulfulde)
+OpenLID has no fue_Latn (Borgu Fulfulde)
+OpenLID has no fuf_Latn (Pular)
+OpenLID has no fuh_Latn (Western Niger Fulfulde)
+OpenLID has no fuq_Latn (Central-Eastern Niger Fulfulde)
+OpenLID has no fuv_Arab (Nigerian Fulfulde)
+OpenLID uses fuv_Latn (Nigerian Fulfulde)
+---------------------------------
+orm, Oromo
+OpenLID uses gaz_Latn (West Central Oromo)
+OpenLID has no hae_Latn (Eastern Oromo)
+---------------------------------
+grb, Grebo
+OpenLID has no gbo_Latn (Northern Grebo)
+---------------------------------
+grn, Guarani
+OpenLID has no gnw_Latn (Western Bolivian Guaraní)
+OpenLID uses gug_Latn (Paraguayan Guaraní)
+OpenLID has no gui_Latn (Eastern Bolivian Guaraní)
+OpenLID has no gun_Latn (Mbyá Guaraní)
+OpenLID has no nhd_Latn (Chiripá)
+---------------------------------
+kok, Konkani (macrolanguage)
+OpenLID has no gom_Deva (Goan Konkani)
+OpenLID has no gom_Latn (Goan Konkani)
+---------------------------------
+gba, Gbaya (Central African Republic)
+OpenLID has no gso_Latn (Southwest Gbaya)
+OpenLID has no gya_Latn (Northwest Gbaya)
+---------------------------------
+hmn, Hmong
+OpenLID has no hnj_Latn (Hmong Njua)
+OpenLID has no mww_Latn (Hmong Daw)
+---------------------------------
+iku, Inuktitut
+OpenLID has no ike_Cans (Eastern Canadian Inuktitut)
+OpenLID has no ikt_Latn (Inuinnaqtun)
+---------------------------------
+kau, Kanuri
+OpenLID has no kby_Latn (Manga Kanuri)
+OpenLID uses knc_Arab (Central Kanuri)
+OpenLID uses knc_Latn (Central Kanuri)
+---------------------------------
+mon, Mongolian
+OpenLID uses khk_Cyrl (Halh Mongolian)
+---------------------------------
+kon, Kongo
+OpenLID has no kng_Latn (Koongo)
+OpenLID has no kwy_Latn (San Salvador Kongo)
+OpenLID has no ldi_Latn (Laari)
+---------------------------------
+kom, Komi
+OpenLID has no koi_Cyrl (Komi-Permyak)
+OpenLID has no kpv_Cyrl (Komi-Zyrian)
+---------------------------------
+kpe, Kpelle
+Only glotlid has this macrolanguage (as macrolanguage)
+---------------------------------
+luy, Luyia
+OpenLID has no lsm_Latn (Saamia)
+OpenLID has no lwg_Latn (Wanga)
+---------------------------------
+lav, Latvian
+OpenLID uses ltg_Latn (Latgalian)
+OpenLID uses lvs_Latn (Standard Latvian)
+---------------------------------
+chm, Mari (Russia)
+OpenLID has no mhr_Cyrl (Eastern Mari)
+OpenLID has no mrj_Cyrl (Western Mari)
+---------------------------------
+man, Mandingo
+OpenLID has no mnk_Latn (Mandinka)
+OpenLID has no msc_Latn (Sankaran Maninka)
+---------------------------------
+raj, Rajasthani
+OpenLID has no mup_Deva (Malvi)
+---------------------------------
+nor, Norwegian
+OpenLID uses nno_Latn (Norwegian Nynorsk)
+OpenLID uses nob_Latn (Norwegian Bokmål)
+---------------------------------
+oji, Ojibwa
+OpenLID has no ojb_Cans (Northwestern Ojibwa)
+OpenLID has no ojb_Latn (Northwestern Ojibwa)
+OpenLID has no otw_Latn (Ottawa)
+---------------------------------
+ori, Oriya (macrolanguage)
+OpenLID has no ory_Latn (Odia)
+OpenLID uses ory_Orya (Odia)
+---------------------------------
+pus, Pushto
+OpenLID uses pbt_Arab (Southern Pashto)
+---------------------------------
+mlg, Malagasy
+OpenLID uses plt_Latn (Plateau Malagasy)
+OpenLID has no skg_Latn (Sakalava Malagasy)
+OpenLID has no tdx_Latn (Tandroy-Mahafaly Malagasy)
+OpenLID has no xmv_Latn (Antankarana Malagasy)
+---------------------------------
+lah, Lahnda
+OpenLID has no pnb_Arab (Western Panjabi)
+OpenLID has no skr_Arab (Saraiki)
+---------------------------------
+que, Quechua
+OpenLID has no qub_Latn (Huallaga Huánuco Quechua)
+OpenLID has no quf_Latn (Lambayeque Quechua)
+OpenLID has no qug_Latn (Chimborazo Highland Quichua)
+OpenLID has no quh_Latn (South Bolivian Quechua)
+OpenLID has no qul_Latn (North Bolivian Quechua)
+OpenLID has no qup_Latn (Southern Pastaza Quechua)
+OpenLID has no qus_Latn (Santiago del Estero Quichua)
+OpenLID has no quw_Latn (Tena Lowland Quichua)
+OpenLID uses quy_Latn (Ayacucho Quechua)
+OpenLID has no quz_Latn (Cusco Quechua)
+OpenLID has no qva_Latn (Ambo-Pasco Quechua)
+OpenLID has no qvc_Latn (Cajamarca Quechua)
+OpenLID has no qve_Latn (Eastern Apurímac Quechua)
+OpenLID has no qvh_Latn (Huamalíes-Dos de Mayo Huánuco Quechua)
+OpenLID has no qvi_Latn (Imbabura Highland Quichua)
+OpenLID has no qvm_Latn (Margos-Yarowilca-Lauricocha Quechua)
+OpenLID has no qvn_Latn (North Junín Quechua)
+OpenLID has no qvo_Latn (Napo Lowland Quechua)
+OpenLID has no qvs_Latn (San Martín Quechua)
+OpenLID has no qvw_Latn (Huaylla Wanca Quechua)
+OpenLID has no qvz_Latn (Northern Pastaza Quichua)
+OpenLID has no qwh_Latn (Huaylas Ancash Quechua)
+OpenLID has no qxh_Latn (Panao Huánuco Quechua)
+OpenLID has no qxl_Latn (Salasaca Highland Quichua)
+OpenLID has no qxn_Latn (Northern Conchucos Ancash Quechua)
+OpenLID has no qxo_Latn (Southern Conchucos Ancash Quechua)
+OpenLID has no qxr_Latn (Cañar Highland Quichua)
+---------------------------------
+rom, Romany
+OpenLID has no rmc_Latn (Carpathian Romani)
+OpenLID has no rml_Latn (Baltic Romani)
+OpenLID has no rmn_Cyrl (Balkan Romani)
+OpenLID has no rmn_Grek (Balkan Romani)
+OpenLID has no rmn_Latn (Balkan Romani)
+OpenLID has no rmo_Latn (Sinte Romani)
+OpenLID has no rmy_Cyrl (Vlax Romani)
+OpenLID has no rmy_Latn (Vlax Romani)
+---------------------------------
+san, Sanskrit
+OpenLID uses san for ['__label__san_Deva', '__label__san_Latn'] (['Sanskrit', 'Sanskrit'])
+glotlid also uses macrolanguage here!
+---------------------------------
+srd, Sardinian
+OpenLID uses srd for ['sdc_Latn', '__label__srd_Latn'] (['Sassarese Sardinian', 'Sardinian'])
+glotlid also uses macrolanguage here!
+---------------------------------
+swa, Swahili (macrolanguage)
+OpenLID has no swc_Latn (Congo Swahili)
+OpenLID uses swh_Latn (Swahili (individual language))
+---------------------------------
+tmh, Tamashek
+OpenLID uses taq_Latn (Tamasheq)
+OpenLID uses taq_Tfng (Tamasheq)
+OpenLID has no thv_Latn (Tahaggart Tamahaq)
+OpenLID has no ttq_Latn (Tawallammat Tamajaq)
+OpenLID has no ttq_Tfng (Tawallammat Tamajaq)
+---------------------------------
+uzb, Uzbek
+OpenLID has no uzn_Cyrl (Northern Uzbek)
+OpenLID uses uzn_Latn (Northern Uzbek)
+OpenLID has no uzs_Arab (Southern Uzbek)
+---------------------------------
+gon, Gondi
+OpenLID has no wsg_Telu (Adilabad Gondi)
+---------------------------------
+yid, Yiddish
+OpenLID uses ydd_Hebr (Eastern Yiddish)
+---------------------------------
+zap, Zapotec
+OpenLID has no zaa_Latn (Sierra de Juárez Zapotec)
+OpenLID has no zab_Latn (Western Tlacolula Valley Zapotec)
+OpenLID has no zac_Latn (Ocotlán Zapotec)
+OpenLID has no zad_Latn (Cajonos Zapotec)
+OpenLID has no zae_Latn (Yareni Zapotec)
+OpenLID has no zai_Latn (Isthmus Zapotec)
+OpenLID has no zam_Latn (Miahuatlán Zapotec)
+OpenLID has no zao_Latn (Ozolotepec Zapotec)
+OpenLID has no zar_Latn (Rincón Zapotec)
+OpenLID has no zas_Latn (Santo Domingo Albarradas Zapotec)
+OpenLID has no zat_Latn (Tabaa Zapotec)
+OpenLID has no zav_Latn (Yatzachi Zapotec)
+OpenLID has no zaw_Latn (Mitla Zapotec)
+OpenLID has no zca_Latn (Coatecas Altas Zapotec)
+OpenLID has no zpa_Latn (Lachiguiri Zapotec)
+OpenLID has no zpc_Latn (Choapan Zapotec)
+OpenLID has no zpg_Latn (Guevea De Humboldt Zapotec)
+OpenLID has no zpi_Latn (Santa María Quiegolani Zapotec)
+OpenLID has no zpj_Latn (Quiavicuzas Zapotec)
+OpenLID has no zpl_Latn (Lachixío Zapotec)
+OpenLID has no zpm_Latn (Mixtepec Zapotec)
+OpenLID has no zpo_Latn (Amatlán Zapotec)
+OpenLID has no zpq_Latn (Zoogocho Zapotec)
+OpenLID has no zpt_Latn (San Vicente Coatlán Zapotec)
+OpenLID has no zpu_Latn (Yalálag Zapotec)
+OpenLID has no zpv_Latn (Chichicapan Zapotec)
+OpenLID has no zpz_Latn (Texmelucan Zapotec)
+OpenLID has no zsr_Latn (Southern Rincon Zapotec)
+OpenLID has no ztq_Latn (Quioquitani-Quierí Zapotec)
+OpenLID has no zty_Latn (Yatee Zapotec)
+---------------------------------
+zha, Zhuang
+OpenLID has no zyb_Latn (Yongbei Zhuang)
+---------------------------------

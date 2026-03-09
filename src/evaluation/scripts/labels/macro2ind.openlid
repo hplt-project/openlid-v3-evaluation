@@ -1,0 +1,108 @@
+sqi, Albanian
+GlotLID uses als_Latn (Tosk Albanian)
+---------------------------------
+ara, Arabic
+Only openlid has this macrolanguage (as macrolanguage)
+---------------------------------
+aym, Aymara
+GlotLID uses ayr_Latn (Central Aymara)
+---------------------------------
+aze, Azerbaijani
+GlotLID uses azb_Arab (South Azerbaijani)
+GlotLID uses azj_Latn (North Azerbaijani)
+---------------------------------
+msa, Malay (macrolanguage)
+GlotLID uses bjn_Arab (Banjar)
+GlotLID uses bjn_Latn (Banjar)
+GlotLID uses ind_Latn (Indonesian)
+GlotLID uses min_Latn (Minangkabau)
+GlotLID uses zsm_Latn (Standard Malay)
+---------------------------------
+hbs, Serbo-Croatian
+GlotLID uses bos_Latn (Bosnian)
+GlotLID uses hrv_Latn (Croatian)
+GlotLID uses srp_Cyrl (Serbian)
+GlotLID uses srp_Latn (Serbian)
+---------------------------------
+kur, Kurdish
+GlotLID uses ckb_Arab (Central Kurdish)
+GlotLID uses kmr_Latn (Northern Kurdish)
+---------------------------------
+zho, Chinese
+GlotLID has no cmn_Hans (Mandarin Chinese)
+GlotLID has no cmn_Hant (Mandarin Chinese)
+GlotLID has no yue_Hant (Yue Chinese)
+---------------------------------
+din, Dinka
+GlotLID uses dik_Latn (Southwestern Dinka)
+---------------------------------
+est, Estonian
+GlotLID uses ekk_Latn (Standard Estonian)
+---------------------------------
+fas, Persian
+GlotLID uses fas for ['__label__fas_Arab'] (['Persian'])
+openlid also uses macrolanguage here!
+---------------------------------
+ful, Fulah
+GlotLID uses fuv_Latn (Nigerian Fulfulde)
+---------------------------------
+orm, Oromo
+GlotLID uses gaz_Latn (West Central Oromo)
+---------------------------------
+grn, Guarani
+GlotLID uses gug_Latn (Paraguayan Guaraní)
+---------------------------------
+mon, Mongolian
+GlotLID uses khk_Cyrl (Halh Mongolian)
+---------------------------------
+kau, Kanuri
+GlotLID uses knc_Arab (Central Kanuri)
+GlotLID uses knc_Latn (Central Kanuri)
+---------------------------------
+lav, Latvian
+GlotLID uses ltg_Latn (Latgalian)
+GlotLID uses lvs_Latn (Standard Latvian)
+---------------------------------
+nor, Norwegian
+GlotLID uses nno_Latn (Norwegian Nynorsk)
+GlotLID uses nob_Latn (Norwegian Bokmål)
+---------------------------------
+nep, Nepali (macrolanguage)
+GlotLID uses npi_Deva (Nepali (individual language))
+---------------------------------
+ori, Oriya (macrolanguage)
+GlotLID uses ory_Orya (Odia)
+---------------------------------
+pus, Pushto
+GlotLID uses pbt_Arab (Southern Pashto)
+---------------------------------
+mlg, Malagasy
+GlotLID uses plt_Latn (Plateau Malagasy)
+---------------------------------
+que, Quechua
+GlotLID uses quy_Latn (Ayacucho Quechua)
+---------------------------------
+san, Sanskrit
+GlotLID uses san for ['__label__san_Deva'] (['Sanskrit'])
+openlid also uses macrolanguage here!
+---------------------------------
+srd, Sardinian
+GlotLID uses srd for ['__label__srd_Latn'] (['Sardinian'])
+openlid also uses macrolanguage here!
+---------------------------------
+swa, Swahili (macrolanguage)
+GlotLID uses swh_Latn (Swahili (individual language))
+---------------------------------
+tmh, Tamashek
+GlotLID uses taq_Latn (Tamasheq)
+GlotLID uses taq_Tfng (Tamasheq)
+---------------------------------
+aka, Akan
+GlotLID uses twi_Latn (Twi)
+---------------------------------
+uzb, Uzbek
+GlotLID uses uzn_Latn (Northern Uzbek)
+---------------------------------
+yid, Yiddish
+GlotLID uses ydd_Hebr (Eastern Yiddish)
+---------------------------------
